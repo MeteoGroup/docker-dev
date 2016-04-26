@@ -1,0 +1,11 @@
+sudo: required
+
+services:
+  - docker
+
+install:
+  - docker pull frolvlad/alpine-glibc
+
+script:
+  - docker build -t meteogroup/docker-dev .
+  - docker run --privileged --rm -i meteogroup/docker-dev /dev/stdin < test.sh
