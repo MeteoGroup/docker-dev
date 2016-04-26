@@ -1,5 +1,5 @@
 
-Docker in docker plus docker-compose
+Docker in docker plus docker-compose[![travis build](https://travis-ci.org/MeteoGroup/docker-dev.svg)](https://travis-ci.org/MeteoGroup/docker-dev)
 ====================================
 
 Run docker builds and docker compose in a container. This indended to be used
@@ -11,7 +11,6 @@ or [concourse](http://concourse.ci). It's based on
 Please read
 [this](https://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/)
 before using this image! Here be dragons!
-
 
 ### Usage
 
