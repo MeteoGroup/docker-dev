@@ -4,9 +4,8 @@ Docker in docker plus docker-compose[![travis build](https://travis-ci.org/Meteo
 
 Run docker builds and docker compose in a container. This indended to be used
 in containerized build environments like [drone](https://github.com/drone/drone)
-or [concourse](http://concourse.ci). It's based on
-[frolvlad/alpine-glibc](https://hub.docker.com/r/frolvlad/alpine-glibc/) as the
-`docker-compose` binary needs _glibc_.
+or [concourse](http://concourse.ci). It's based
+[docker:dind](https://hub.docker.com/_/docker/).
 
 Please read
 [this](https://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/)
@@ -60,10 +59,6 @@ docker run --privileged --rm -i meteogroup/docker-dev /dev/stdin < script.sh
 [Docker Compose](https://www.docker.com/products/docker-compose)
 – Copyright © 2012-2016 Docker, Inc., licensed under the
 [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
-
-The [frolvlad/alpine-glibc](https://hub.docker.com/r/frolvlad/alpine-glibc/)
-docker image – Copyright © 2012-2016 Vlad, licensed under the
-[MIT License](https://opensource.org/licenses/MIT)
 
 Copyright © 2016 MeteoGroup Deutschland GmbH,
 all the files in this git repository are released under the terms of

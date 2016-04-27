@@ -1,9 +1,10 @@
 #!/bin/bash
 
-docker daemon --log-level "${DOCKERD_LOG_LEVEL:-warn}" --storage-driver=vfs &
+dockerd-entrypoint.sh --log-level "${DOCKERD_LOG_LEVEL:-warn}" &
+DOCKERD_PID="$!"
 
 while ! docker version 1>/dev/null; do
-  kill -0 %1 || exit
+  kill -0 "$!" || exit
   sleep .5
 done
 
