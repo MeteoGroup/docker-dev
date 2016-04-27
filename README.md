@@ -4,7 +4,7 @@ Docker in docker plus docker-compose[![travis build](https://travis-ci.org/Meteo
 
 Run docker builds and docker compose in a container. This indended to be used
 in containerized build environments like [drone](https://github.com/drone/drone)
-or [concourse](http://concourse.ci). It's based
+or [concourse](http://concourse.ci). It's based on
 [docker:dind](https://hub.docker.com/_/docker/).
 
 Please read
