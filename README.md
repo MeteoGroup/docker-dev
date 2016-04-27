@@ -26,15 +26,15 @@ To pull the latest image from docker hub run
 docker pull meteogroup/docker-dev
 ```
 
-The default `ENTRYPOINT` starts the docker daemon and run `sh` afterwards. It
-will also take care of stopping the docker daemon as soos as `sh` exits. To run
+The default `ENTRYPOINT` starts the docker daemon and run `bash` afterwards. It
+will also take care of stopping the docker daemon as soos as `bash` exits. To run
 with an interactive shell use
 
 ```bash
 docker run --privileged --rm -ti meteogroup/docker-dev
 ```
 
-To execute a command use the `-c` argument to `sh`.
+To execute a command use the `-c` argument to `bash`.
 
 ```bash
 docker run --privileged --rm -ti meteogroup/docker-dev -c echo "Hello world!"
