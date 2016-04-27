@@ -49,7 +49,7 @@ docker run --privileged -v <path to dockerbuild>:/work -w /work --rm -ti \
 It's possible to execute a script by piping it to the container
 
 ```bash
-docker run --privileged --rm -i meteogroup/docker-dev /dev/stdin < script.sh
+docker run --privileged --rm -i meteogroup/docker-dev < script.sh
 ```
 
 
