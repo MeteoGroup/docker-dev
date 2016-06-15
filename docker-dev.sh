@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dockerd-entrypoint.sh --log-level "${DOCKERD_LOG_LEVEL:-warn}" &
+dockerd-entrypoint.sh --log-level "${DOCKERD_LOG_LEVEL:-warn}" "$@" &
 DOCKERD_PID="$!"
 
 while ! docker version 1>/dev/null; do
