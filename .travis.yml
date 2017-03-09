@@ -1,10 +1,9 @@
-sudo: required
-
 services:
   - docker
+sudo: required
 
 install:
-  - docker pull frolvlad/alpine-glibc
+  - docker pull docker:dind
 
 script:
   - docker build -t meteogroup/docker-dev .
