@@ -1,6 +1,7 @@
 FROM docker:dind
 
-RUN apk add --no-cache curl bash jq iptables xz py-pip \
+RUN apk --no-cache -U upgrade \
+ && apk --no-cache -U add curl bash jq iptables xz py-pip \
  && pip install docker-compose
 
 VOLUME /var/lib/docker
